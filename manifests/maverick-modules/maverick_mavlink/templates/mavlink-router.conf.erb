@@ -17,7 +17,7 @@ Log=/srv/maverick/data/mavlink/<%= @name %>/logs
 <% elsif @inputtype == "serial" -%>
 [UartEndpoint serialin]
     Device=<%= @inputaddress %>
-    Baud=<%= @inputbaud %>,115200,57600
+    Baud=<%= @inputbaud %>
 <% end -%>
 
 <% (0..(@udpports.to_i()-1)).each do |i| -%>
